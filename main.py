@@ -17,4 +17,4 @@ if __name__ == '__main__':
 # (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonAnalizaDanych> python .\main.py
 # Hi, PyCharm
 # snake_case
-# ctrl alt l
+# ctrl alt l - formatowanie zgodne z PEP8
