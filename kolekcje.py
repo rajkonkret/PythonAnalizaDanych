@@ -167,7 +167,18 @@ zbior_z_listy = set(lista_do_zbioru)
 print(zbior_z_listy)  # {66, 101, 102, 105, 45, 77, 55, '55'}
 
 matrix = [[3, 4, 5], [6, 7, [8, 9, 0]]]
-print(matrix)
+print(matrix)  # [[3, 4, 5], [6, 7, [8, 9, 0]]]
 print(matrix[0][0])  # 3
 print(matrix[1][2][2])  # 0
 
+# imie = input("Jak masz na imię? ")
+# print("Twoje imię to:", imie)
+# # Jak masz na imię? Radek
+# # Twoje imię to: Radek
+
+a = int(input("Podaj liczbę a"))  # zwraca str
+b = input("Podaj liczbę b")
+print(f"Suma liczb {a} + {b} = {a + int(b)}")
+# Podaj liczbę a4
+# Podaj liczbę b5
+# Suma liczb 4 + 5 = 9
