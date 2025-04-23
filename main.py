@@ -16,3 +16,5 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonAnalizaDanych> python .\main.py
 # Hi, PyCharm
+# snake_case
+# ctrl alt l
