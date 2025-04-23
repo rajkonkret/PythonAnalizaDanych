@@ -165,3 +165,9 @@ print(type(lista_ze_zbioru))
 lista_do_zbioru = [66, 101, 102, 105, 45, 77, 77, 55, '55', 102]
 zbior_z_listy = set(lista_do_zbioru)
 print(zbior_z_listy)  # {66, 101, 102, 105, 45, 77, 55, '55'}
+
+matrix = [[3, 4, 5], [6, 7, [8, 9, 0]]]
+print(matrix)
+print(matrix[0][0])  # 3
+print(matrix[1][2][2])  # 0
+
