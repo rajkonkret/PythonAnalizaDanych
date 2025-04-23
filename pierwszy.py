@@ -108,3 +108,49 @@ print(sys.float_info)
 print(0.1 + 0.9)  # 1.0
 print(0.1 + 0.2)  # 0.30000000000000004 bład zaokraglenia
 # the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345
+
+# f - string format
+print(f"Nazywam się {name}")
+print("Nazywam się {}".format(name))
+# Nazywam się Radek
+# Nazywam się Radek
+
+liczba = 3.900001
+print(f"Wersja pythona: {liczba:.2f}")  # Wersja pythona: 3.90
+print(f"""
+Tekst
+    wielolinijkowych""")
+# "Tekst
+#     wielolinijkowych"
+"""Komentarz
+    wielolinijkowy"""
+
+print(print.__doc__)
+
+starszy = "Mam  na imię %s"  # %s - str
+print(starszy % name)  # Mam  na imię Radek
+print("Wynik:", liczba)  # Wynik: 3.900001
+#  sep=' ', end='\n'
+print("Wynik:", liczba, sep="....")  # Wynik:....3.900001
+
+print(100 / 2)  # 50.0 float
+print(100 // 3)  # cześć całkowita dzielenia 33
+print(100 % 3)  # modulo - reszta z dzielenia, 1 bo 33 * 3 + 1 = 100
+
+zysk = 34567890123
+print(f"Nasza duża liczba: {zysk}")  # Nasza duża liczba: 34567890123
+print(f"Nasza duża liczba: {zysk:,}")  # Nasza duża liczba: 34,567,890,123
+zysk = 34567899.987
+print(f"Nasza duża liczba: {zysk:,}")  # Nasza duża liczba: 34,567,899.987
+print(f"Nasza duża liczba: {zysk:_}")  # Nasza duża liczba: 34,567,899.987
+
+parametr = 10_000_000_000
+print(parametr)
+print(type(parametr))
+# 10000000000
+# <class 'int'>
+
+encoded_text = tekst.encode("utf-8")  # kodujemy do utf-8
+print(encoded_text)  # b'Witaj \xc5\x9awiecie'
+print(type(encoded_text))  # <class 'bytes'>
+print(encoded_text.decode('utf-8'))  # Witaj Świecie
