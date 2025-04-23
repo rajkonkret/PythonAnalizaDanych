@@ -47,11 +47,10 @@ age = 48
 print(age)
 print(type(age))  # <class 'int'>
 
-
 # podpowiedzi typów
 name: str = 90
 print(type(name))
-print(name) # 90
+print(name)  # 90
 name = "Radek"
 # mypy
 # pip install mypy
@@ -59,3 +58,53 @@ name = "Radek"
 # pierwszy.py:42: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
 # pierwszy.py:52: error: Name "name" already defined on line 38  [no-redef]
 # Found 2 errors in 1 file (checked 1 source file)
+
+tekst = "Witaj Świecie"
+
+print(tekst)
+print(type(tekst))
+
+# teksty są niemutowalne
+# """ Return a copy of the string converted to uppercase. """
+tekst.upper()
+print(tekst)
+print(tekst.upper())
+zmienna = tekst.upper()
+print(zmienna)
+# WIATJ ŚWIECIE
+# WIATJ ŚWIECIE
+
+print(tekst.lower())  # witaj świecie
+print(tekst.capitalize())  # Witaj świecie
+
+zmienna1 = "GROSS"
+zmienna2 = "groẞ"
+
+print(zmienna1.lower() == zmienna2.lower())  # False
+print(zmienna1.casefold() == zmienna2.casefold())  # True
+
+print(1 != 8)  # różne # True
+# zmienne logiczne True, False, boolean
+print(int("39"))  # 39 int
+print(str(39))  # 39 str
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+print(bool(100))  # True
+print(bool("radek"))  # True
+
+print(bool(0))  # False
+print(bool(""))  # False
+
+# None - odpowiednik null, stan nieokreslony, nie wiem
+
+temp = 36.6
+print(type(temp))  # <class 'float'>
+print(sys.float_info)
+# sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308, min_exp=-1021,
+#                min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
+
+print(0.1 + 0.9)  # 1.0
+print(0.1 + 0.2)  # 0.30000000000000004 bład zaokraglenia
+# the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345
